@@ -1,9 +1,11 @@
 package iphone;
 
 import aparelhoTelefonico.AparelhoTelefonico;
+import navegadorInternet.NavegadorInternet;
+
 import reprodutor.ReprodutorMusical;
 
-public class Iphone implements ReprodutorMusical, AparelhoTelefonico {
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
   @Override
   public void tocar() {
@@ -35,4 +37,20 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico {
   public void iniciarCorreioVoz() {
     System.out.println("INCIANDO CORREIO DE VOZ");
   }
+
+  @Override
+  public void exibirPagina() {
+    System.out.println("EXIBINDO PAGINA");
+  }
+
+  @Override
+  public void adicionarNovaAba() {
+    System.out.println("ADICIONANDO NOVA ABA");
+  }
+
+  @Override
+  public void atualizarPagina() {
+    System.out.println("ATUALIZAR PAGINA");
+  }
+
 }
